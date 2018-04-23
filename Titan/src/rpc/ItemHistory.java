@@ -64,7 +64,7 @@ public class ItemHistory extends HttpServlet {
             // Get request body and convert to JSONObject
 			JSONObject input = RpcHelper.readJsonObject(request);;
 			
-			            // Get user_id and item_id from input
+			// Get user_id and item_id from input
 			String userId = input.getString("user_id");
 			JSONArray array = (JSONArray) input.get("favorite");
 			
